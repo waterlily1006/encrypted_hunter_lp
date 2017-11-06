@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en-US">
+
+<head>
+    <title> Treasure Raiders is on release. Join us and start your adventure!</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Treasure Raiders is a TPS shooter where you search ruins for lost treasures. Join the warm-up event and win great rewards! This is where the adventure begins! Play it now!" />
+    <meta name="keywords" content="Treasure Raiders, TPS, treasure hunt, adventure, shooter, exploration game, ruins, castles, warm-up page, great rewards" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:url" content="http://mobile.test.oasgames.com/mtren/lp/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Treasure Raiders is on release. Join us and start your adventure!"/>
+    <meta property="og:description" content="Treasure Raiders is a TPS shooter where you search ruins for lost treasures. Join the warm-up event and win great rewards! This is where the adventure begins! Play it now!"/>
+    <meta property="og:image" content="https://img.oasgames.com/upload/1506675189.jpg"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="shortcut icon" href="imgs/bitbug_favicon.ico">
+    <link rel="icon" href="imgs/bitbug_favicon.ico" type="image/vnd.microsoft.icon" />
+    <script src="js/jq.js"></script>
+    <script type="text/javascript" src="/webroot/static/pc/public/jquery.cookie/jquery.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+        var user_id = ''
+        var link = 'http://mobile.test.oasgames.com/mtren/lp/'
+        var fb_share = {
+            app_id: '959932577482523',
+            method: 'feed',
+            display: 'touch'
+        }
+        var scale = 1 / devicePixelRatio;
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.2 + 'px';
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header clearFix">
+        <img class="fl" src="imgs/icon_top.png" />
+        <h3 class="h3">GOLD OF PLEASURE</h3>
+        <a href="//mob.oasgames.com/murl/?game_code=mtren&lang=en" class="fr download"><span>DOWNLOAD</span></a>
+    </div>
+    <!-- 内容 -->
+    <div id="page_box">
+        <img src="imgs/logo.png" alt="logo" class="logo clearfix">
+        <div class="left_box">
+            <img src="imgs/img_vediokuang.png" alt="" class="img_vediokuang">
+            <img src="imgs/img_vedio.png" alt="" class="img_vedio">
+            <a href="//mob.oasgames.com/murl/?game_code=mtren&lang=en" class="download2"><span>DOWNLOAD</span></a>
+        </div>
+        <div class="gift_box" id="gift_box">
+            <img src="imgs/icon_baoxiang.png" alt="baoxiang" class="baoxiang">
+            <img src="imgs/img_received.png" alt="received" class="received" id="received">
+            <div class="show_score">SHOW GIFTSCORE</div>
+        </div>
+        <div id="bigbox">
+            <img src="imgs/tittle_Open-Beta-Rewards.png" alt="" class="rewards_title" style="margin-left:.25rem; width:2.7rem">
+            <div id="xiaohezi">
+                <div class="reward reward1">
+                    LIKES Giftpack
+                </div>
+                <div class="reward reward2">
+                    Server-wide Reward
+                </div>
+                <div class="reward reward3">
+                    New Server Giftpack
+                </div>
+                <div class="reward reward4">
+                    Growth Giftpack
+                </div>
+                <div class="reward reward5">
+                    Login Reward
+                </div>
+                <div class="reward reward6">
+                    First Recharge Giftpack
+                </div>
+                <div class="reward reward7">
+                    chong zhi song hao li
+                </div>
+                <div class="reward reward8">
+                    Unique
+                </div>
+            </div>
+            <img src="imgs/tittle_Features.png" alt="" class="features_title" style="margin-left:.25rem; width:2.7rem">
+            <div class="swiper-container" style="width:100%;margin-top:.15rem">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imgs/img_Features1.png" alt="" class="features_img" style="width:100%;"></div>
+                    <div class="swiper-slide"><img src="imgs/img_Features2.png" alt="" class="features_img" style="width:100%;"></div>
+                    <div class="swiper-slide"><img src="imgs/img_Features3.png" alt="" class="features_img" style="width:100%;"></div>
+                    <div class="swiper-slide"><img src="imgs/img_Features4.png" alt="" class="features_img" style="width:100%;"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <img src="imgs/tittle_Popularity-poll.png" alt="" style="margin-left:.25rem; width:2.7rem;margin-top:.7rem;">
+            <div style="margin-top:.15rem;" id="img_box">
+                <div id="left_img">
+                    <img src="imgs/img_rw1_little_hover.png" class="xiaojiaose" style="width:100%">
+                    <img src="imgs/img_rw2_little.png" class="xiaojiaose" style="width:100%">
+                    <img src="imgs/img_rw3_little.png" class="xiaojiaose" style="width:100%">
+                    <img src="imgs/img_rw4_little.png" class="xiaojiaose" style="width:100%">
+                    <img src="imgs/img_rw5_little.png" class="xiaojiaose" style="width:100%">
+                </div>
+                <img src="imgs/img_rw1.png" class="bigjiaose" style="width:60%;display:block;float:right;margin-right:.43rem;">
+                <img src="imgs/img_rw2.png" class="bigjiaose" style="width:60%;display:block;float:right;margin-right:.43rem;display:none;">
+                <img src="imgs/img_rw3.png" class="bigjiaose" style="width:60%;display:block;float:right;margin-right:.43rem;display:none;">
+                <img src="imgs/img_rw4.png" class="bigjiaose" style="width:60%;display:block;float:right;margin-right:.43rem;display:none;">
+                <img src="imgs/img_rw5.png" class="bigjiaose" style="width:60%;display:block;float:right;margin-right:.43rem;display:none;">
+            </div>
+            <div style="background-color: #22273f;">
+                <div>
+                    <div class="baobox100">
+                        <h2 style="font-size:.15rem;color:#bb9759; text-align: center;margin-bottom:.2rem;">Charles</h2>
+                        <div class="baobox">
+                            <div style="margin:0 .16rem;margin-bottom:.06rem;font-size:.1rem;color:#b7a78b;line-height:.22rem; word-wrap: break-word;">Ten years ago, his father-who was a treasure hunter, too-left Charles a mysterious energy gauntlet, before he left never to be seen again. In hopes of finding his father, Charles became an apprentice treasure hunter himself once he was old enough, and set out for the "Ark of Wonders" where the Treasure Society was said to be found. On his path through the world of treasure hunters, Charles not only gained the precious friendship of his teammates, but the truth about his father's disappearance was unveiled bit by bit, too...
+
+
+
+                            </div>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;margin-top:0.2rem;margin-bottom:0.12rem">Role:Damage/buffs</p>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;">Ease of use:<img src="imgs/img_wujiao.png" alt=""><img src="imgs/img_wujiao.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="baobox100" style="display:none">
+                        <h2 style="font-size:.15rem;color:#bb9759; text-align: center;margin-bottom:.2rem;">Drake</h2>
+                        <div class="baobox">
+                            <div style="margin:0 .16rem;margin-bottom:.06rem;font-size:.1rem;color:#b7a78b;line-height:.22rem; word-wrap: break-word;">At first glance, he seems like some horny poser, while he's actually an S level hunter and badass! He might pawn his hunter badge to return gambling debts, but never ever would he go anywhere without his old cowboy hat. Although Charles is just a newbie hunter, Drake thinks the world of him and has helped him out more than a few times. What he sees in this young man, is the reflection of an old friend from times past.
+
+                            </div>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;margin-top:0.2rem;margin-bottom:0.12rem">Role:Tank/buffs</p>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0 .16rem;">Ease of use:<img src="imgs/img_wujiao.png" alt=""><img src="imgs/img_wujiao.png" alt=""><img src="imgs/img_wujiao.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="baobox100" style="display:none">
+                        <h2 style="font-size:.15rem;color:#bb9759; text-align: center;margin-bottom:.2rem;">Silver Seeker</h2>
+                        <div class="baobox">
+                            <div style="margin:0 .16rem;margin-bottom:.06rem;font-size:.1rem;color:#b7a78b;line-height:.22rem; word-wrap: break-word;">To restore her family's honor, this stiff-upper-lip girl of noble descent has put on her high-tech cloak and went incognito to become the Treasure Society's latest - and most mysterious - star. While solo investigating the truth about Operation TS_07 from 10 years ago, this lonely lady met a young man. Will there be the warmth of love bringing new life to this lonesome, cold planet?
+                            </div>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;margin-top:0.2rem;margin-bottom:0.12rem"">Role:Medic/support</p>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0 .16rem;">Ease of use:<img src="imgs/img_wujiao.png" alt=""><img src="imgs/img_wujiao.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="baobox100" style="display:none">
+                        <h2 style="font-size:.15rem;color:#bb9759; text-align: center;margin-bottom:.2rem;">Mary</h2>
+                        <div class="baobox">
+                            <div style="margin:0 .16rem;margin-bottom:.06rem;font-size:.1rem;color:#b7a78b;line-height:.22rem; word-wrap: break-word;">When she's Mariko, she is a nerdy, shy archeology student that's trying her best to get her summer school assignments finished in time. But when she's Mary, she turns into a quick-tempered veteran treasure hunter with just the right amount of greedy. As luck would have it, she was rescued by Charles, and has been madly in love ever since. But will Miss Twinsanity's love story pan out smoothly?
+                            </div>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;margin-top:0.2rem;margin-bottom:0.12rem">Role:Critical/damage</p>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0 .16rem;">Ease of use:<img src="imgs/img_wujiao.png" alt=""><img src="imgs/img_wujiao.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="baobox100" style="display:none">
+                        <h2 style="font-size:.15rem;color:#bb9759; text-align: center;margin-bottom:.2rem;">Harry</h2>
+                        <div class="baobox">
+                            <div style="margin:0 .16rem;margin-bottom:.06rem;font-size:.1rem;color:#b7a78b;line-height:.22rem; word-wrap: break-word;">Harry used to be a successful scientist - and heartless playboy. After he was turned into a baby by his envious competitor, Harry has just started to reconsider his life choices. A 10-months-old baby doctor, Harry is carrying out missions as a treasure hunter in his robot mech, always looking for a way to regain his former self with the power of ancient treasures.
+                            </div>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0rem .16rem;margin-top:0.2rem;margin-bottom:0.12rem">Role:Damage/tank</p>
+                            <p style="color:#b7a78b;font-size:.1rem;margin:0 .16rem;">Ease of use:<img src="imgs/img_wujiao.png" alt=""></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-color: #22273f;">
+                    <img src="imgs/tittle_game-strategy.png" alt="" style="margin-left:.25rem; width:2.7rem;margin-bottom:.3rem;">
+                    <div class="introduction">
+                        <div class="zuoban information_btn">
+                            <p style="margin-top:.17rem;">Information</p>
+                        </div>
+                        <div class="youban information_btn">
+                            <p style="margin-top:.17rem;">Strategy</p>
+                        </div>
+                         <!-- 信息盒子1 -->
+                        <div class="information_box information_active">
+                            <div class="bottom-left-box">
+
+                            <!-- About the game -->
+                                <p class="bottom-left-box-p" style="margin-top:.1rem;">
+                                    <span style="padding-left:.1rem;line-height:.13rem;">About the game</span>
+                                </p>
+                                <p style="margin-bottom:0rem;">
+                                    <a href="pass1.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Game Background</a>
+                                </p>
+                                 <p style="margin-bottom:0rem;">
+                                    <a href="pass2.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Troupe</a>
+                                </p>
+                                 <p style="margin-bottom:0rem;">
+                                    <a href="pass3.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Treasure System</a>
+                                </p>
+                                 <p style="margin-bottom:0rem;">
+                                    <a href="pass4.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Equipment Progress</a>
+                                </p>
+                                 <p style="margin-bottom:0rem;">
+                                    <a href="pass5.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">World Territories</a>
+                                </p>
+
+                               
+                            </div>
+                            
+                            <div class="bottom-right-box">
+                                 <!-- character -->
+                                <p class="bottom-left-box-p" style="margin-top:.1rem;line-height:.13rem;">
+                                    <span style="padding-left:.1rem;">Character</span>
+                                </p>
+                                <p>
+                                    <a href="pass6.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Charles Hunter</a>
+                                </p>
+                                <p>
+                                    <a href="pass7.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Drake</a>
+                                </p>
+                                <p>
+                                    <a href="pass8.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Harry Potten</a>
+                                </p>
+                                <p>
+                                    <a href="pass9.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Mariko and Mary</a>
+                                </p>
+                                 <p>
+                                    <a href="pass10.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Silver Seeker</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 信息盒子2 -->
+                        <div class="information_box">
+                                <div class="bottom-left-box">
+                                <!-- 新手上路 -->
+                                <p class="bottom-left-box-p" style="margin-top:.1rem;line-height:.13rem;">
+                                    <span style="padding-left:.1rem;">Newbie Guide</span>
+                                </p>
+                                <p style="margin-bottom:.1rem;">
+                                   <a href="pass11.html" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Newbie Guidee</a>
+                                </p>
+                                <!-- 进阶挑战 -->
+                                 <p class="bottom-left-box-p" style="margin-top:.1rem;line-height:.13rem;">
+                                    <span style="padding-left:.1rem;">Advanced challenges</span>
+                                </p>
+                                <p style="margin-bottom:0rem;">
+                                    <a href="pass12.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;"> Boss Hungry Mummy</a>
+                                </p>
+                                <p style="margin-bottom:0rem;">
+                                     <a href="pass13.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;"> Boss - Mech Gorilla</a>
+                                </p>
+                                <p style="margin-bottom:0rem;">
+                                     <a href="pass14.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Boss Sir Tan de Feat</a>
+                                </p>
+                               
+                            </div>
+                            
+                            <div class="bottom-right-box">
+                                <!-- 特色活动 -->
+                                <p class="bottom-left-box-p" style="margin-top:.1rem;">
+                                    <span style="padding-left:.1rem;line-height:.13rem;">Event</span>
+                                </p>
+                                <p>
+                                    <a href="pass15.html" targrt="_blank"  style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Racing Event</a>
+                                </p>
+                                <p>
+                                    <a href="pass16.html" targrt="_blank"  style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Twin Star Arena Event</a>
+                                </p>
+                                 <!-- 特色玩法 -->
+                                <p class="bottom-left-box-p" style="margin-top:.1rem;">
+                                    <span style="padding-left:.1rem;line-height:.13rem;">Game Mode</span>
+                                </p>
+                                <p>
+                                    <a href="pass17.html" targrt="_blank"  style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Holo Exercise</a>
+                                </p>
+                                <p>
+                                   <a href="pass18.html" targrt="_blank" style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;">Base Defense</a>
+                                </p>
+                                 <p>
+                                    <a href="pass19.html" targrt="_blank"  style="padding-left:.1rem;font-size:.07rem;color:#b7a78b;line-height:.13rem;"> Hunter Championship</a>
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="introduction1big">
+                        <div class="introduction1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2 style="color:#07c2ea;font-size:.1rem;text-align:center;line-height:.25rem;margin-top:.2rem;">
+                <img src="//www.oasgames.com/resource/widget/mob_footer/images/logo.png" alt="">
+            </h2>
+            <p style="color:#858c91;font-size:.08rem;text-align:center;">©2012-2017 OASIS GAMES LIMITED. All rights reserved.</p>
+            <p style="color:#858c91;text-align:center;font-size:.08rem;">All trademarks referenced herein are the properties of their respective owners.</p>
+        </footer>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="shade"></div>
+    <!-- 弹窗 -->
+    <div id="shade-box">
+
+        <!-- 弹窗2 -->
+        <div id="shade-box2">
+            <h2 style="color:#813503;text-align:center;line-height:.28rem;font-size:0.1rem">GIFT CODE
+                <div class="close_img close_img2"></div>
+            </h2>
+            <div class="shade-box-backgroundcolor shade-box-style">
+                <p class="fontstyle" id="p1">
+                    dsfasdfasdfasdfasdfasdfasdfasdfasdfadsfasdf adfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfa asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfas
+                </p>
+                <div id="name_box">
+                    <div id="name1"><span id="copy-span" class="gift-code" style="font-size:.13rem;display:block;width:2rem;color:#8b420d;line-height:.23rem;text-align:center;"></span></div>
+                    <!-- <div id="copy" style="line-height:.2rem;text-align:center;">Copy<button id="copy-button" value="发 发" data-clipboard-action="copy" data-clipboard-target="#copy-span" style="width:.5rem;height:.2rem;opacity:0 ;"></div> -->
+                </div>
+                <div id="lanbuttom">
+                    <div id="lanbuttom-logo" class="share-btn"><span style="font-size:.12rem;color:#ffffff;float:right;margin-right:-0.43rem;">Share</span></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 弹窗3 -->
+        <div id="shade-box3">
+            <h2 style="line-height:.28rem;font-size:0.12rem;color:#813503;text-align:center;"><span class="box3-title">CHENG ZHANG LI BAO</span>
+                <div class="close_img close_img3"></div>
+            </h2>
+            <div class="shade-box-backgroundcolor" style="height:1.85rem;">
+                <ul class="fontstyle" id="p2">
+                    <li class="active"> Like our FB page for rewards</li>
+                    <li> When Facebook subscribers reach XXX, you can claim rewards </li>
+                    <li> Seven-day gift event, just login to claim them</li>
+                    <li> Levelup for rewards</li>
+                    <li> Check-in everyday for rewards</li>
+                    <li> First Recharge for Character exclsive elite weapon</li>
+                    <li> Cumlative recharge for great reward</li>
+                    <li> Instance first pass will be given permanent unique title</li>
+                </ul>
+                <div id="tankuang">
+                    <div id="tankuang1">Previous</div>
+                    <div id="tankuang2">Next</div>
+                </div>
+            </div> 
+        </div>
+
+       <!--  视频播放 -->
+
+        <div class="window video_window">
+            <span class="close window_close video_close"></span>
+                 <iframe id="frame" width="990" height="700" src="https://www.youtube.com/embed/xJXuA5ixH6Q?rel=0" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+        
+
+    </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="//www.oasgames.com/resource/_js/oas_library.2.0.js?2"></script>
+<script type="text/javascript" src="js/mtr.js"></script>
+</html>

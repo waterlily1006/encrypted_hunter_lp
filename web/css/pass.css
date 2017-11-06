@@ -1,0 +1,197 @@
+/*.info_con{
+  display: none;
+}
+*/
+
+
+
+.louti_nav{
+  display: none;
+}
+
+.borad{
+  height:998px;
+  width:1300px;
+  margin:0 auto;
+  position: relative;
+}
+.borad_up{
+    height: 583px;
+    min-width:1300px;
+    background: url(../imgs/bg_ny_kuang_top.png) no-repeat center;
+}
+.borad_mid{
+  height:1200px;
+  background: url(../imgs/bg_ny_kuang_mid.png) repeat-y center;
+} 
+.borad_down{
+    height: 371px;
+    width:1300px;
+    background: url(../imgs/bg_ny_kuang_bottom.png) no-repeat center;
+}
+.info_title{
+  font-size:30px;
+  color:#803f05;
+  padding-top:90px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.ps{
+ width:173px;
+ margin:10px auto 40px;
+ color:#834813;
+ height:30px;
+}
+.ps .time{
+ display: inline-block;
+ margin-top: 10px;
+   margin-right: 10px;
+}
+.ps img{
+ margin-bottom: 5px;
+}
+.info_con{
+  height:900px;
+  width:900px;
+    position: absolute;
+    left:326px;
+    top:0px;
+}
+
+.cont_div{
+     display: none;
+
+}
+/* 给每个table初始化时 默认第一个显示 */
+.cont_active{
+  display: block;
+}
+.active_kuai{
+     /* display: block; */
+     min-height:300px;
+     /*background: pink;*/
+}
+.info_pass{
+  padding-left: 5px;
+  color:#834813;
+  font-size: 14px;
+  line-height: 30px;
+  display: none;
+}
+/* 给每个table内同中 每个a对应的默认第一个显示 */
+.info_active{
+  display: block;
+}
+.active_duan{
+  padding-left: 5px;
+  color:#834813;
+  font-size: 14px;
+  line-height: 30px;
+  /* display: block; */
+
+}
+.menu_list {  
+  width: 275px;
+  position: absolute;
+  top:65px;
+  left:22px;
+}
+.menu_head {
+    cursor: pointer;
+    height: 71px;
+    background: url(../imgs/btn_ny_2.png) center center no-repeat;
+    line-height: 71px;
+    color: #c3a273;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 42px;
+    margin: 0;
+
+}
+.menu_head  img{
+    margin-right: 30px;
+    margin-top: 30px;
+    float: right;
+}
+.menu_body {
+  box-sizing: border-box;
+  display: none;
+  padding-bottom: 20px;
+  background:url(../imgs/btn_ny_3zhankai_bottom.png) no-repeat bottom;
+}
+.menu_body a{
+  display:block;
+  color:#c3a273;
+  width: 216px;
+  height:35px;
+  line-height: 35px;
+  background:url(../imgs/btn_ny_3zhankai_mid.png);
+  background-size: contain;
+  padding-left:30px;
+  text-decoration:none;
+  margin-left: 13px;
+  /*border-bottom:2px red solid;*/
+
+
+}
+.menu_body a img{
+   vertical-align: top;
+}
+.memu_body a:nth-of-type(2){
+   background:#26252b url(../imgs/line_nav_ny_hei.png) no-repeat bottom;
+   color:red;
+   padding-bottom: 20px;
+}
+.menu_body a:hover{
+  color: #faaf44;
+  text-decoration:none;
+}
+
+.menu_body b{
+    display: block;
+    background: url(../imgs/dian.png) no-repeat;
+    background-position: left center;
+    line-height: 35px;
+    padding-left: 14px;
+}
+
+.ps .time{
+  margin-right: 10px;
+}
+
+.ps a{
+    display: block;
+    height:24px;
+    width:24px;
+    background-size: 100% 100%;
+    float:left;
+    margin-right: 3px;
+}
+.f{
+  background: url(../imgs/f.png) no-repeat;
+  background-size: contain;
+}
+.g{
+  background: url(../imgs/g.png) no-repeat;
+}
+.t{
+  background: url(../imgs/t.png) no-repeat;
+}
+
+.tree_title{
+  display: block;
+  width:97%;
+  height:100%;
+  /*background: rgba(172,81,25,0.4);*/
+  /*background:linear-gradient(to left,#2b282a,#3f3026,#2b282a);*/
+  background:url(../imgs/btn_ny_3zhankaihover.png) no-repeat center center;
+  text-align: left;
+}
+
+.foot{
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 2000000;
+}
